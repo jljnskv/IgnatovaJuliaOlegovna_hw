@@ -1,8 +1,10 @@
 //список использованных команд
 git init //для папки IgnatovaJuliaOlegovna_hw
 git add README.md //так изначально назывался этот файл
-git commit -m "first commit"
+git commit -m 
 git remote add origin https://github.com/jljnskv/IgnatovaJuliaOlegovna_hw.git //ошибочка вышла - origin уже есть!
 git remote add user1 //вместо origin...
 git push -u user1 master
 git mv README.md commands.txt //переименовала этот документ
+git rm README.md //неудача: файл уже не существует
+git restore --staged README.md //удаляем файл из отслеживаемых
